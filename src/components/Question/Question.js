@@ -8,12 +8,12 @@ const Question = () => {
   <Accordion.Item eventKey="0">
     <Accordion.Header>ReactJs কিভাবে কাজ করে?</Accordion.Header>
     <Accordion.Body>
-    A javascript Library  for building user interface. 
+    A javascript Library for building user interface. 
 library সুবিধা হলো তুমি তোমার ইচ্ছা মতো যে কোনো কিছু add করতে পারবে...
-*React  টা হলো Declarative.
-React খুব ইফ্রসেনছি update করে. কোড খুব সহজে বোঝা
+*React টা হলো Declarative.
+React খুব ইফ্রসেনছি update করে.কোড খুব সহজে বোঝা
  যায়* React Component Based. Website বিভিন্ন বিভিন্ন ভাগে ভাগে রাখে
-.এইগুলো মেনেজ করা update করা সহজ . re-use করতে চাইলে অনেক সহজে করা যায়।
+.এইগুলো মেনেজ করা update করা সহজ. re-use করতে চাইলে অনেক সহজে করা যায়।
     </Accordion.Body>
   </Accordion.Item>
   <Accordion.Item eventKey="1">
