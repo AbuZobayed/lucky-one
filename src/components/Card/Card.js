@@ -16,7 +16,8 @@ const Card = (props) => {
       
     </div>
   <div className='d-flex justify-content-center'>
-  <button onClick={ () => cartDetails(product) } className='btn btn-primary btn-outline-info border-0 text-white btn-cart'>Add to Cart <FontAwesomeIcon icon={faShoppingCart} ></FontAwesomeIcon> </button>
+  <button onClick={ () => cartDetails(product) } 
+  className='btn btn-dark btn-outline-success border-0 text-white btn-cart'>Add to Cart <FontAwesomeIcon icon={faShoppingCart} ></FontAwesomeIcon> </button>
   </div>
   </div>
 </div>

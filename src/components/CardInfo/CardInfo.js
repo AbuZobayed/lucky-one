@@ -1,7 +1,7 @@
 import React from 'react';
-import './CardDetails.css'
+import './CardInfo.css'
 
-const CardDetails = ({image, name,}) => {
+const CardInfo = ({image, name,}) => {
 
   return (
     <div>
@@ -9,12 +9,12 @@ const CardDetails = ({image, name,}) => {
         <div className='details'>
         <img src={image} alt="" />
         <p> {name} </p>
-          <i className="bi bi-trash-fill icon"></i>
+          
           
         </div>
     </div>
   );
 };
 
-export default CardDetails;
+export default CardInfo;
 

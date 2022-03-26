@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Card from '../Card/Card';
-import CardDetails from '../CardDetails/CardDetails';
+import CardDetails from '../CardInfo/CardInfo';
 
 const Item = () => {
 
@@ -34,13 +34,14 @@ const Item = () => {
     setCarts(newCart)
   }
 
-  const removeItems = (items) => {
+  const deleteItems = (items) => {
     let newCart = [...carts, items]
     newCart = []
     setCarts(newCart)
   }
 
-  const chooseOneProduct = () => {
+  const onlyOneProduct = () => {
+    
     const randomProduct = carts[Math.floor(Math.random() * carts.length)];
     setCarts([randomProduct])
   }
@@ -57,17 +58,17 @@ const Item = () => {
    </div> 
     </div>
 
-    <div className='col-md-3 bg-info'> 
-      <h5 className='text-center my-4'>Phone Details</h5>
+    <div className='col-md-3 rounded-1 bg-success p-2 text-dark bg-opacity-25 '> 
+      <h5 className='text-center my-4'>Phone Info</h5>
         {
           carts.map(cart => <CardDetails key={cart.id}  image={cart.img} name={cart.name} ></CardDetails>)
         }
 
       <div className='d-block text-center'>
-      <button onClick={chooseOneProduct} className='btn btn-primary text-white border-0'>Choose one Product</button>
+      <button onClick={onlyOneProduct} className='btn btn-dark text-white border-0'>Choose one Product</button>
       </div>
       <div className='d-block text-center'>
-      <button onClick={removeItems} className='btn btn-danger my-2 text-white border-0'>Remove Items</button>
+      <button onClick={deleteItems} className='btn btn-danger my-2 text-white border-0'>Delete Items</button>
       </div>
 
     </div>
